@@ -4,15 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/loginINFirstActivity"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:hint="LOGIN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="25dp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:id="@+id/passwordINFirstActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PASSWORD"
+        app:layout_constraintTop_toBottomOf="@+id/loginINFirstActivity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="25dp"
+        />
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        app:layout_constraintTop_toBottomOf="@+id/passwordINFirstActivity"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="25dp"
+        android:background="@color/colorBtn"
+        android:textColor="@color/colorBac"
+        />
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="25dp"
+        android:background="@color/colorBtn"
+        android:textColor="@color/colorBac"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
