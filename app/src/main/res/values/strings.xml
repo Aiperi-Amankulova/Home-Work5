@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Home Work №5</string>
+    <string name="app_login">LOGIN</string>
+    <string name="app_password">PASSWORD</string>
+    <string name="app_signIn">SIGN IN</string>
+    <string name="app_signUp">SIGN UP</string>
+    <string name="app_logout">LOGOUT</string>
+    <string name="app_update">UPDATE</string>
 </resources>
